@@ -1,0 +1,57 @@
+.nav {
+  background-color: #efefef;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav > .logo {
+  margin-right: 20px;
+}
+
+.nav > .logo > img {
+  height: 30px;
+}
+
+.nav > div {
+  display: flex;
+}
+
+.nav > div > div {
+  margin: 0 10px;
+}
+
+#home,
+#features,
+#aboutus {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+#home:hover,
+#features:hover,
+#aboutus:hover {
+  color: #166ecc;
+  background-color: bisque;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav > .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav > div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
