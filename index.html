@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment Sample</title>
-  </head>
-  <body>
-    <h1>Hello</h1>
-    <h1 style="background-color: bisque">Hello World</h1>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in
-      quos officiis sequi hic perspiciatis est reiciendis incidunt. Fuga
-    </p>
-  </body>
+<html>
+<head>
+<title>Simple Login Page</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="login-container">
+  <h1>Login</h1>
+  <input type="text" placeholder="Username" />
+  <input type="password" placeholder="Password" />
+  <button>Login</button>
+</div>
+<script>
+const loginForm = document.querySelector(".login-container");
+const loginButton = document.querySelector("button");
+
+loginButton.addEventListener("click", () => {
+  const username = document.querySelector("input[placeholder='Username']").value;
+  const password = document.querySelector("input[placeholder='Password']").value;
+
+  // TODO: Check if username and password are valid.
+
+  console.log("Username:", username);
+  console.log("Password:", password);
+});
+</script>
+</body>
 </html>
